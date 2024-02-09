@@ -149,4 +149,4 @@ This tab contains settings necessary to obtain the transformation matrix from in
 
 ## 💬 Feedback
 
-This version does not reduce the speed after collisions and bounces, and also does not allow you to determine the density and type of materials under various processing scenarios, and much more. I have a lot of ideas on how to develop the asset and this direction, but maybe someone will have interesting suggestions or suggestions, it would be very interesting to know about it, and If you have any feedback or run into issues, please feel free to open an issue on this GitHub project.
+If you have any feedback or run into issues, please feel free to open an issue on this GitHub project. I appreciate your support!
