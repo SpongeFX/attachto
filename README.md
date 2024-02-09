@@ -2,7 +2,7 @@
 
 ![license](https://img.shields.io/badge/license-MIT-green) ![version](https://img.shields.io/badge/version-1.0-blue) 
 
-### "Attchto" is a Houdini SideFX digital asset for interactively adding points to polygons by clicking the LMB in the viewport.
+### "Attchto" is a Houdini SideFX digital asset for adding points to polygons by clicking the LMB in the viewport.
 
 [![demo](https://spongefx.art/asset/media/public/attachto_720.mp4)](https://github.com/SpongeFX/attachto/assets/152398516/83950ac4-68c1-496c-8878-b8612fd5da0c)
 
@@ -35,18 +35,18 @@
 * If you are using the "Transform" SOP node, enable the "Output Attribute" toggle, add the "attribpromote" SOP node, and transfer the detail attribute <i>@xform</i> to the primitives.
 * If you cannot create the <i>@xform</i> attribute on incoming primitives, add a "connectivity" SOP node before the asset, go to the "Incoming Geometry" tab, enable the corresponding toggle, and set the attribute name the same as specified in the "connectivity" SOP node.
 
-Connect the polygonal object to "input1".
+1. Connect the polygonal object to "input1".
 
-Select the HDA "attachto" in the Network View, select "Show Handle" in the selector and handle control menu.
+2. Select the HDA "attachto" in the Network View, select "Show Handle" in the selector and handle control menu.
 
-Set the necessary parameters if required. Click the mouse to add points to the polygonal geometry object connected to "input1" and displayed in the viewport.
+3. Set the necessary parameters if required. Click the mouse to add points to the polygonal geometry object connected to "input1" and displayed in the viewport.
 
 <br>
 
 <table border="1">
   <tbody>
     <tr>
-      <td width="25%" rowspan="5"><img src="public/images/npts.jpg"></td>
+      <td width="25%" rowspan="5"><img src="https://github.com/SpongeFX/attachto/assets/152398516/785476cf-ab83-4667-ba6f-11ad51179e6a"></td>
       <td>Use the <i><b>Reset</b></i> button to reset parameters and delete points. This works when the asset is selected in the Network View.</td>
     </tr>
     <tr>
@@ -102,7 +102,7 @@ The majority of parameters in default settings are presets for individual parame
         <td colspan="2"><p>Adds a float point attribute to the created points. After toggling on, each newly created point will be assigned an attribute with the name specified in the "Attribute name" parameter and the value specified in the "Attribute Value" parameter. Points created before toggling have an attribute value of "0". To set attribute values for previously created points, use the "Apply To All" button. The "Apply To All" button assigns the value of the "Attribute Value" parameter to the corresponding individual parameter for all created points. By default, an attribute named <i>@pscale</i> with a value of "1" is created.</p></td>
     </tr>
     <tr>
-        <td valign="top"><i>Attrib rand </i></td>
+        <td valign="top"><i>Attribute Randomize</i></td>
         <td colspan="2"><p id="dlim">Randomizes values of the floating-point attribute for newly created points. Use this with the <i>@pscale</i> attribute to randomize sizes of geometry copied onto points.</td>
     </tr>
     <tr>
