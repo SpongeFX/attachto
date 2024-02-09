@@ -4,7 +4,7 @@
 
 ### Attachto is a Houdini SideFX digital asset for adding points to polygons by clicking the LMB in the viewport.
 
-[![demo](https://spongefx.art/asset/media/public/attachto_720.mp4)](https://github.com/SpongeFX/attachto/assets/152398516/83950ac4-68c1-496c-8878-b8612fd5da0c)
+[![demo](https://github.com/SpongeFX/attachto/assets/152398516/14e018c5-3a46-4a1c-b85a-49ac369cdaed](https://github.com/SpongeFX/attachto/assets/152398516/83950ac4-68c1-496c-8878-b8612fd5da0c)
 
 
 Attachto creates points when the LMB is clicked in the viewport on polygonal geometry objects and attaches these points to the polygons on which they were created, inheriting all subsequent transformations of the parent polygons. By using with "CopyToPoints" SOP node this asset allows for quick and convenient attachment of instanced geometry to other polygonal geometry objects, creating groups, and controlling orientation and position relative to the parent objects.
