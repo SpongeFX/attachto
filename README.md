@@ -4,8 +4,7 @@
 
 ### "Attchto" is a Houdini SideFX digital asset for interactively adding points to polygons by clicking the LMB in the viewport.
 
-
-[![demo](https://spongefx.art/asset/media/public/simshot.mp4)](https://github.com/SpongeFX/simshot/assets/152398516/8f4dfd2c-98bf-4934-b3d4-8d5e296b0c8d)
+[![demo](https://spongefx.art/asset/media/public/attachto_720.mp4)](https://github.com/SpongeFX/attachto/assets/152398516/83950ac4-68c1-496c-8878-b8612fd5da0c)
 
 
 "Attachto" creates points when the LMB is clicked in the viewport on polygonal geometry objects and attaches these points to the polygons on which they were created, inheriting all subsequent transformations of the parent polygons. By using with "CopyToPoints" SOP node this asset allows for quick and convenient attachment of instanced geometry to other polygonal geometry objects, creating groups, and controlling orientation and position relative to the parent objects.
@@ -41,6 +40,29 @@ Connect the polygonal object to "input1".
 Select the HDA "attachto" in the Network View, select "Show Handle" in the selector and handle control menu.
 
 Set the necessary parameters if required. Click the mouse to add points to the polygonal geometry object connected to "input1" and displayed in the viewport.
+
+<br>
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td width="25%" rowspan="5"><img src="public/images/npts.jpg"></td>
+      <td>Use the <i><b>Reset</b></i> button to reset parameters and delete points. This works when the asset is selected in the Network View.</td>
+    </tr>
+    <tr>
+      <td>The "<i><b>Number Of Points</b></i>" parameter specifies the number of points you plan to set. Do not input numbers greater than 1000, as this may cause temporary freezing if your computer is not powerful enough.</td>
+    </tr>
+    <tr>
+      <td>Between the reset button and the "Number Of Points" parameter, there is a "<i><b>counter</b></i>" that shows how many points you can add to the geometry.</td>
+    </tr>
+    <tr>
+      <td>Once the planned number of points has been added, you can increase the value of the "Number Of Points" parameter if you need to continue adding points, or press the reset button to delete all set points.</td>
+    </tr>
+    <tr>
+      <td>The <i><b>Clear</b></i> button resets the value of the "Number Of Points" parameter.</td>
+    </tr>
+  </tbody>
+</table>
 
 <br>
 
@@ -111,11 +133,11 @@ This tab contains settings necessary to obtain the transformation matrix from in
 
 <table border="1">
     <tr>
-        <td valign="top" width="18%"><a id="expmode"></a><i>gET XFORM</i></td>
+        <td valign="top" width="18%"><a id="expmode"></a><i>Get XFORM</i></td>
         <td><p>Enabling activates the calculation of the transformation matrix4 using a faster but less efficient method. This works well with objects that do not deform (do not change their sizes) over time. For proper operation, specify the attribute name containing the object identifier in the "Attribute name" parameter.</p></td>
     </tr>
     <tr>
-        <td valign="top"><i>Group</i></td>
+        <td valign="top"><i>Get XFORM for each primitive</i></td>
         <td><p>Enabling activates the calculation of the transformation matrix4 for each primitive. This method works with deforming objects. It is a more efficient method but may take more time. For proper operation, specify the attribute name containing the object identifier in the "Attribute name" parameter.</p></td>
     </tr>
     <tr>
