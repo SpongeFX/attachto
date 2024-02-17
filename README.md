@@ -4,7 +4,7 @@
 
 ### Attachto is a Houdini SideFX digital asset for adding points to polygons by clicking the LMB in the viewport.
 
-[![demo](https://github.com/SpongeFX/attachto/assets/152398516/14e018c5-3a46-4a1c-b85a-49ac369cdaed](https://github.com/SpongeFX/attachto/assets/152398516/83950ac4-68c1-496c-8878-b8612fd5da0c)
+[![demo](https://github.com/SpongeFX/attachto/assets/152398516/14e018c5-3a46-4a1c-b85a-49ac369cdaed)](https://github.com/SpongeFX/attachto/assets/152398516/83950ac4-68c1-496c-8878-b8612fd5da0c)
 
 
 Attachto creates points when the LMB is clicked in the viewport on polygonal geometry objects and attaches these points to the polygons on which they were created, inheriting all subsequent transformations of the parent polygons. By using with "CopyToPoints" SOP node this asset allows for quick and convenient attachment of instanced geometry to other polygonal geometry objects, creating groups, and controlling orientation and position relative to the parent objects.
@@ -24,16 +24,16 @@ Attachto creates points when the LMB is clicked in the viewport on polygonal geo
 + Control of position changing relative to the parent object
 + Alignment of instanced geometric objects copied onto points along the surface of polygons
 
-#### Requirements for incoming geometry:
-- It is recommended to use polygonal geometric objects with a primitive attribute <i>@xform</i> containing the transformation matrix4 of each primitive. If the primitive attribute <i>@xform</i> is missing on the object, use the "GetXFORM" toggle in the "Incoming Geometry" tab
-- Does not work with packed geometry
-
 ## 🏃 Quick guide how to use the Attachto
 
+#### Requirements for incoming geometry:
+* Does not work with packed geometry
 * The polygonal object to which points need to be attached must contain a primitive attribute <i>@xform</i> with a transformation matrix4 for each primitive:
-* If you are using packed geometry, create the <i>@xform</i> attribute using the "getpackedtransform" function and unpack the packed polygons. 
-* If you are using the "Transform" SOP node, enable the "Output Attribute" toggle, add the "attribpromote" SOP node, and transfer the detail attribute <i>@xform</i> to the primitives.
-* If you cannot create the <i>@xform</i> attribute on incoming primitives, add a "connectivity" SOP node before the asset, go to the "Incoming Geometry" tab, enable the corresponding toggle, and set the attribute name the same as specified in the "connectivity" SOP node.
+  * If you are using packed geometry, create the <i>@xform</i> attribute using the "getpackedtransform" function and unpack the packed polygons. 
+  * If you are using the "Transform" SOP node, enable the "Output Attribute" toggle, add the "attribpromote" SOP node, and transfer the detail attribute <i>@xform</i> to the primitives.
+  * If you cannot create the <i>@xform</i> attribute on incoming primitives, add a "connectivity" SOP node before the asset, go to the "Incoming Geometry" tab, enable the corresponding toggle, and set the attribute name the same as specified in the "connectivity" SOP node.
+
+<br>
 
 1. Connect the polygonal object to "input1".
 
@@ -65,6 +65,17 @@ Attachto creates points when the LMB is clicked in the viewport on polygonal geo
 </table>
 
 <br>
+
+[![Video Quick Guide](https://github.com/SpongeFX/attachto/assets/152398516/9f515e21-2af9-4bf9-90fc-61329ace46f6)](https://youtu.be/iIrEpRk16cI "A brief overview of the available functionality of the hda")
+
+<br>
+
+#### Tips for using 
+* 
+
+
+<br>
+
 
 ## 📂 Tabs and Parameters
 
@@ -127,7 +138,7 @@ The majority of parameters in default settings are presets for individual parame
 </table><br>
 <a id="explode"></a> 
 
-## 📁 Incomming Geomerty
+### 📁 Incomming Geomerty
 
 This tab contains settings necessary to obtain the transformation matrix from incoming polygons. Use this if your geometry does not contain a primitive attribute <i>@xform</i>> with a transformation matrix4.
 
