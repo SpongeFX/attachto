@@ -66,13 +66,13 @@ Attachto creates points when the LMB is clicked in the viewport on polygonal geo
 
 <br>
 
-#### Tips for using 
-* If you already know the polygons to which you need to attach points, try to input only those into the asset, removing all others. This will increase efficiency and reduce the use of computational resources.
-* Points are added quite quickly, and if you need to place a single point in a specific position, try not to move the mouse cursor during the click. If someone finds this control inconvenient to use, please let me know, and I will add control over the delays between adding points to the asset parameters.
+[![Video Quick Guide](https://github.com/SpongeFX/attachto/assets/152398516/9f515e21-2af9-4bf9-90fc-61329ace46f6)](https://youtu.be/iIrEpRk16cI "A brief overview of the available functionality of the hda")
 
 <br>
 
-[![Video Quick Guide](https://github.com/SpongeFX/attachto/assets/152398516/9f515e21-2af9-4bf9-90fc-61329ace46f6)](https://youtu.be/iIrEpRk16cI "A brief overview of the available functionality of the hda")
+#### 💡 Tips for using 
+* If you already know the polygons to which you need to attach points, try to input only those into the asset, removing all others. This will increase efficiency and reduce the use of computational resources.
+* Points are added quite quickly, and if you need to place a single point in a specific position, try not to move the mouse cursor during the click. If someone finds this control inconvenient to use, please let me know, and I will add control over the delays between adding points to the asset parameters.
 
 
 <br>
