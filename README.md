@@ -89,52 +89,52 @@ The majority of parameters in default settings are presets for individual parame
 <table border="1">
     <tr>
         <td valign="top" width="18%"><i>Group</i></td>
-        <td colspan="2"><p>Adding created points to groups. Enabling the toggle activates the "Group Name" parameter and allows adding newly created points to a group with the name specified in the "Group Name" parameter. Changing group membership and group name is available at any time in the individual parameters of each created point.</p></td>
+        <td><p>Adding created points to groups. Enabling the toggle activates the "Group Name" parameter and allows adding newly created points to a group with the name specified in the "Group Name" parameter. Changing group membership and group name is available at any time in the individual parameters of each created point.</p></td>
     </tr>
     <tr>
         <td valign="top"><i>Сopy Normal From Primitive To Points</i></td>
-        <td colspan="2"><p>Copies the <i>Normal</i> attribute from the primitive at the intersection point where the point was created to the created point.</p></td>
+        <td><p>Copies the <i>Normal</i> attribute from the primitive at the intersection point where the point was created to the created point.</p></td>
     </tr>
     <tr>
         <td valign="top"><i>Offsets For Added Points</i></td>
-        <td colspan="2"><p>Offsets the position of created points in the direction of the normal of the primitive on which the point was created. After toggling on, it activates the "Offset" parameter, the value of which serves as a preset for newly created points. Each newly created point will be shifted by the value specified in this parameter in the direction of the normal of the primitive on which the point was created or in another direction if the "Along Toggle Axis" toggle is enabled. Changing the offset parameter value is available at any time in the individual parameters of each created point. This does not work when the "Align To Primitive" toggle is enabled.</p></td>
+        <td><p>Offsets the position of created points in the direction of the normal of the primitive on which the point was created. After toggling on, it activates the "Offset" parameter, the value of which serves as a preset for newly created points. Each newly created point will be shifted by the value specified in this parameter in the direction of the normal of the primitive on which the point was created or in another direction if the "Along Toggle Axis" toggle is enabled. Changing the offset parameter value is available at any time in the individual parameters of each created point. This does not work when the "Align To Primitive" toggle is enabled.</p></td>
     </tr>
     <tr>
         <td valign="top"><a id="delay"></a><i>Along Custom Axis</i>
     </td>
-        <td colspan="2">Changing the direction vector for offsetting the position of points. Available when the "Custom Axis" or "Look At" toggle is enabled. The new value will be taken from the "Axis" or "Look At" vector parameter.</td>
+        <td>Changing the direction vector for offsetting the position of points. Available when the "Custom Axis" or "Look At" toggle is enabled. The new value will be taken from the "Axis" or "Look At" vector parameter.</td>
     </tr>
     <tr>
         <td valign="top"><i>Offset Multiplier</i></td>
         <td valign="top">Offsets the position of all created points in the direction of the normal of the primitive on which the point was created. Enabling the toggle activates the "Multiplier" parameter, which serves as a multiplier for the values of the individual "Offset #" parameter for all created points. If values other than 0 were previously specified in the individual "Offset #" parameter for the points, these values will be taken into account in the offset calculations.<br></td>
-        <td><img src="https://github.com/SpongeFX/simshot/assets/152398516/d10017d9-2b6a-4ce6-9615-52ea2143c6e2"></td>
     </tr>
     <tr>
         <td valign="top"><i>Attribute (float)</i></td>
-        <td colspan="2"><p>Adds a float point attribute to the created points. After toggling on, each newly created point will be assigned an attribute with the name specified in the "Attribute name" parameter and the value specified in the "Attribute Value" parameter. Points created before toggling have an attribute value of "0". To set attribute values for previously created points, use the "Apply To All" button. The "Apply To All" button assigns the value of the "Attribute Value" parameter to the corresponding individual parameter for all created points. By default, an attribute named <i>@pscale</i> with a value of "1" is created.</p></td>
+        <td><p>Adds a float point attribute to the created points. After toggling on, each newly created point will be assigned an attribute with the name specified in the "Attribute name" parameter and the value specified in the "Attribute Value" parameter. Points created before toggling have an attribute value of "0". To set attribute values for previously created points, use the "Apply To All" button. The "Apply To All" button assigns the value of the "Attribute Value" parameter to the corresponding individual parameter for all created points. By default, an attribute named <i>@pscale</i> with a value of "1" is created.</p></td>
     </tr>
     <tr>
         <td valign="top"><i>Attribute Randomize</i></td>
-        <td colspan="2"><p id="dlim">Randomizes values of the floating-point attribute for newly created points. Use this with the <i>@pscale</i> attribute to randomize sizes of geometry copied onto points.</td>
+        <td><p id="dlim">Randomizes values of the floating-point attribute for newly created points. Use this with the <i>@pscale</i> attribute to randomize sizes of geometry copied onto points.</td>
     </tr>
     <tr>
         <td valign="top"><i>Align To Prim</i></td>
-        <td colspan="2"><p>Aligns geometric objects copied onto points to the plane of the primitives. For proper operation, set the height of the object copied onto points in the "Instance Height" parameter. With one height value in the "Instance Height" parameter, you can adjust different object sizes by changing the individual parameter "Attribute Value" for each point, provided the attribute name is <i>@pscale</i>. When randomization is enabled, alignment is performed considering the modified values of <i>@pscale</i>. To compensate for polygon overlap, toggle on "Offset Multiplier" and add the required offset in the "Multiplier" parameter.</p></td>
+        <td><p>Aligns geometric objects copied onto points to the plane of the primitives. For proper operation, set the height of the object copied onto points in the "Instance Height" parameter. With one height value in the "Instance Height" parameter, you can adjust different object sizes by changing the individual parameter "Attribute Value" for each point, provided the attribute name is <i>@pscale</i>. When randomization is enabled, alignment is performed considering the modified values of <i>@pscale</i>. To compensate for polygon overlap, toggle on "Offset Multiplier" and add the required offset in the "Multiplier" parameter.</p></td>
     </tr>
     <tr>
         <td valign="top"><i>Rotation</i></td>
-        <td colspan="2"><p>Enabling adds a rotation angle to the quaternion <i>@orient</i> and allows rotating the attached geometry along the axis directed along the primitive normal or as specified by the user. Rotation affects all created points but can be set for each point in its individual parameters. To do this, go to the desired point, activate the "individual Rotation Angle" parameter using the "Activate" toggle, and set the required value for the individual rotation angle.</p></td>
+        <td><p>Enabling adds a rotation angle to the quaternion <i>@orient</i> and allows rotating the attached geometry along the axis directed along the primitive normal or as specified by the user. Rotation affects all created points but can be set for each point in its individual parameters. To do this, go to the desired point, activate the "individual Rotation Angle" parameter using the "Activate" toggle, and set the required value for the individual rotation angle.</p></td>
     </tr>
     <tr>
-        <td valign="top"><i>Randomize Rotation</i></td><td colspan="2"><p>Randomizes rotation angle values. Use this if you want to randomize the rotation angle for all points.</p></td>
+        <td valign="top"><i>Randomize Rotation</i></td>
+        <td><p>Randomizes rotation angle values. Use this if you want to randomize the rotation angle for all points.</p></td>
     </tr>
     <tr>
         <td ><i>Custom Axis</i></td>
-        <td colspan="2"><p>Sets a custom rotation axis for all points. Activates the vector parameter to set a custom axis rotation direction. By default, the rotation axis is equal to the primitive normal on which the point was created.</p></td>
+        <td><p>Sets a custom rotation axis for all points. Activates the vector parameter to set a custom axis rotation direction. By default, the rotation axis is equal to the primitive normal on which the point was created.</p></td>
     </tr>
     <tr>
         <td ><i>Look At</td>
-        <td colspan="2"><p>Sets a custom rotation axis vector directed from the position where the primitive was intersected to the position specified in the vector parameter "Look At Position".</p></td>
+        <td><p>Sets a custom rotation axis vector directed from the position where the primitive was intersected to the position specified in the vector parameter "Look At Position".</p></td>
     </tr>
 </table><br>
 <a id="explode"></a> 
