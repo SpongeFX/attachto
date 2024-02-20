@@ -141,7 +141,7 @@ The majority of parameters in default settings are presets for individual parame
 
 ### 📁 Incomming Geomerty
 
-This tab contains settings necessary to obtain the transformation matrix from incoming polygons. Use this if your geometry does not contain a primitive attribute <i>@xform</i>> with a transformation matrix4.
+This tab contains settings necessary to obtain the transformation matrix from incoming polygons. Use this if your geometry does not contain a primitive attribute <i>@xform</i> with a transformation matrix4.
 
 <table border="1">
     <tr>
