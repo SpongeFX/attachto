@@ -15,7 +15,7 @@ Attachto creates points when the LMB is clicked in the viewport on polygonal geo
 
 ## ☑️ Features
 + Tested in Houdini versions: 19.5
-+ Object Space.
++ SOP
 + Group and individual parameter settings
 + Extracting transformation matrix from input polygons
 + Control of the addition of newly created points to groups
